@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vetement{% endblock %}
+
+{% block body %}
+    <h1>Vetement</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ vetement.id }}</td>
+            </tr>
+            <tr>
+                <th>Libel_vet</th>
+                <td>{{ vetement.libelVet }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_admin_vetement_index') }}">back to list</a>
+
+    <a href="{{ path('app_admin_vetement_edit', {'id': vetement.id}) }}">edit</a>
+
+    {{ include('admin_vetement/_delete_form.html.twig') }}
+{% endblock %}

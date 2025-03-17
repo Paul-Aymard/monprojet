@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Client{% endblock %}
+
+{% block body %}
+    
+    <div class="pagetitle">
+      <h1>Gestion des Clients</h1>
+      <nav>
+         
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-12">
+
+          {{ include('admin_client/_form.html.twig') }}
+
+        </div>
+      </div>
+    </section>
+    <a href="{{ path('app_admin_client_index') }}">back to list</a>
+{% endblock %}
+

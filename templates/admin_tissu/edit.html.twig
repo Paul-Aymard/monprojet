@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Tissu{% endblock %}
+
+{% block body %}
+    <h1>Edit Tissu</h1>
+
+    {{ include('admin_tissu/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_admin_tissu_index') }}">back to list</a>
+
+    {{ include('admin_tissu/_delete_form.html.twig') }}
+{% endblock %}

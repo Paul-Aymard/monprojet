@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vetement index{% endblock %}
+
+{% block body %}
+    <h1>Vetement index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Libel_vet</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for vetement in vetements %}
+            <tr>
+                <td>{{ vetement.id }}</td>
+                <td>{{ vetement.libelVet }}</td>
+                <td>
+                    <a href="{{ path('app_admin_vetement_show', {'id': vetement.id}) }}">show</a>
+                    <a href="{{ path('app_admin_vetement_edit', {'id': vetement.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_admin_vetement_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,170 @@
+<aside id="sidebar" class="sidebar">
+
+  <ul class="sidebar-nav" id="sidebar-nav">
+
+    <li class="nav-item">
+      <a class="nav-link " href="index.html">
+        <i class="bi bi-grid"></i>
+        <span>Tableau de bord</span>
+      </a>
+    </li><!-- End Dashboard Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#client-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-person"></i><span>Client</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="client-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href={{ path('app_admin_client_new') }}>
+            <i class="bi bi-person-plus"></i><span>Ajout des clients</span>
+          </a>
+        </li>
+        <li>
+          <a href={{ path('app_admin_client_index') }}>
+            <i class="bi bi-people"></i><span>Liste des clients</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Client Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#employee-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-briefcase"></i><span>Employé</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="employee-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href= {{ path('app_admin_employe_index') }}>
+            <i class="bi bi-people"></i><span>Liste des employés</span>
+          </a>
+        </li>
+        <li>
+          <a href= {{ path('app_admin_employe_new') }}>
+            <i class="bi bi-person-plus"></i><span>Ajout des nouveaux employés</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Employé Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#facture-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-receipt"></i><span>Facture</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="facture-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href= {{ path('app_admin_facture_new') }}>
+            <i class="bi bi-file-earmark-plus"></i><span>Créer une nouvelle facture</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href={{ path('app_admin_facture_index') }}  >
+            <i class="bi bi-file-earmark-text"></i><span>Liste des factures</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Facture Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#fournisseur-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-truck"></i><span>Fournisseur</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="fournisseur-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href= {{ path('app_admin_fournisseur_new') }}>
+            <i class="bi bi-person-plus"></i><span>Ajouter un fournisseur</span>
+          </a>
+        </li>
+        <li>
+          <a href= {{ path('app_admin_fournisseur_index') }}>
+            <i class="bi bi-people"></i><span>Liste des fournisseurs</span>
+          </a>
+        </li>
+        
+      </ul>
+    </li><!-- End Fournisseur Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#mesure-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-rulers"></i><span>Mesure</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="mesure-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href= {{ path('app_admin_mesure_new') }}>
+            <i class="bi bi-ruler"></i><span>Ajouter une nouvelle mesure</span>
+          </a>
+        </li>
+        <li>
+          <a href=  {{ path('app_admin_mesure_index') }}>
+            <i class="bi bi-list-ul"></i><span>Liste des mesures des clients</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Mesure Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#modele-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-card-list"></i><span>Modèle</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="modele-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href= {{ path('app_admin_modele_new') }}>
+            <i class="bi bi-plus-circle"></i><span>Ajout de nouveaux modèle</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href= {{ path('app_admin_modele_index') }}>
+            <i class="bi bi-list"></i><span>Liste de modèle</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Modèle Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#tissu-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-fabric"></i><span>Tissu</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="tissu-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href= {{ path('app_admin_tissu_new') }}>
+            <i class="bi bi-plus-circle"></i><span>Ajout de nouveaux tissu</span>
+          </a>
+        </li>
+      
+        <li>
+          <a href= {{ path('app_admin_tissu_index') }}>
+            <i class="bi bi-list"></i><span>Liste de tissu disponible</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Tissu Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#vetement-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-shirt"></i><span>Vêtement</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="vetement-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+        <li>
+          <a href= {{ path('app_admin_vetement_new') }}>
+            <i class="bi bi-plus-circle"></i><span>Ajout de nouveaux vêtement</span>
+          </a>
+        </li>
+       
+        <li>
+          <a href= href={{ path('app_admin_vetement_index') }}>
+            <i class="bi bi-list"></i><span>Liste de vêtement disponible</span>
+          </a>
+        </li>
+      </ul>
+    </li><!-- End Vêtement Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed"  href= {{ path('app_logout') }}>
+        <i class="bi bi-box-arrow-in-right"></i>
+        <span>Se déconnecter</span>
+      </a>
+    </li><!-- End Login Page Nav -->
+
+  </ul>
+
+</aside><!-- End Sidebar-->
